@@ -1,0 +1,32 @@
+#col-left, #col-right {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+}
+
+#col-left {
+    left: 0;
+    width: 40%;
+    background-color: #1d1d1d;
+}
+
+#col-right {
+    margin-top: 10vh;
+    right: 0;
+    width: 60%;
+}
+
+#video{
+    margin:0%;
+    padding:20vh 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1d1d;
+    width: 100%;
+}
+canvas{
+    position: absolute;
+    
+}
