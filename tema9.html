@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf=8"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximun-scale=1.0"/>
+
+        <title>TEMA 2.9</title>
+        <script src="./face-api.min.js" defer></script>
+        <script src="./script.js" defer></script>
+        <link rel="stylesheet" href="./style.css">
+        
+        <link href="styles/style.css" rel="stylesheet" type="text/css" >
+        <link href="styles/framework.css" rel="stylesheet" type="text/css" >
+        <link href="styles/owl.carousel.css" rel="stylesheet" type="text/css" >
+        <link href="styles/owl.theme.css" rel="stylesheet" type="text/css" >
+        <link href="styles/swipebox.css" rel="stylesheet" type="text/css" >
+        <link href="styles/colorbox.css" rel="stylesheet" type="text/css" >
+
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+        <script type="text/javascript" src="scripts/jqueryui.js"></script>
+        <script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.swipebox.js"></script>
+        <script type="text/javascript" src="scripts/colorbox.js"></script>
+        <script type="text/javascript" src="scripts/snap.js"></script>
+        <script type="text/javascript" src="scripts/contact.js"></script>
+        <script type="text/javascript" src="scripts/custom.js"></script>
+        <script type="text/javascript" src="scripts/framework.js"></script>
+        <script type="text/javascript" src="scripts/framework.launcher.js"></script>
+
+    </head>
+
+    <body>
+        <div id="preloader">
+            <div id="status">
+                <p class="center-text">
+                    Cargando... <em>espere un momento...,</em>
+                </p>
+            </div>
+        </div>
+        
+        <div class="header">
+            <a href="#" class="show-navigation"></a>
+            <a href="#" class="side-navigation"></a>
+            <img src="images/misc/logo.png" class="page-logo" alt="img">
+        </div>
+
+        <div class="navigation">
+            <div class="navigation-wrapper">
+                <div class="nav-item">
+                    <a href="index.html" class="landing-icon">Inicio <em class="unselected-item"></em></a>
+                    <a href="tema1.html" class="landing-icon">Tema 2.1 <em class="unselected-item"></em></a>
+                    <a href="tema9.html" class="landing-icon">Tema 2.9 <em class="unselected-item"></em></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-header-clear"></div>
+
+        <section id="col-left">
+            <video id="video" autoplay muted width="720" height="540"></video>
+        </section>
+        
+        <section id="col-right">
+            <div class="Content-section">
+                <h1 class="left-text">2.9 Función implícita.</h1>
+                <em class="left-text">Objetivo: El objetivo principal de estudiar las funciones implícitas en cálculo diferencial es poder derivar e integrar funciones que no están expresadas explícitamente en términos de sus variables independientes. Este tema es fundamental en el cálculo avanzado y es especialmente útil en problemas de geometría analítica, física y economía, entre otras disciplinas. </em>
+                <div class="overlay"></div>
+            </div>
+        
+            <div class="content">
+                <div class="container no-bottom">
+                    <h3>Informacion general</h3>
+                    <p>Las funciones implícitas son funciones en las que la variable dependiente no se puede expresar explícitamente en términos de las variables independientes. En lugar de eso, se expresan mediante una ecuación que las relaciona con otras variables. Por ejemplo, la ecuación x^2 + y^2 = 1 representa una circunferencia unitaria, y aunque no es posible despejar la variable y en términos de x, aún podemos trabajar con la ecuación para encontrar su derivada.
+                        <br><br>
+                        Para derivar una función implícita, se utiliza la regla de la cadena y la derivada implícita. La derivada implícita es una técnica que nos permite encontrar la tasa de cambio de la variable dependiente con respecto a las variables independientes sin tener que despejarla explícitamente.</p>
+                    
+                    <div class="container no-bottom">
+                        <h3>Definicion del tema</h3>
+                        <div class="decoration hide-if-mobile"></div>
+                        <div class="one-half-responsive last column" style="width: 100%;">
+                            <p><span class="text-highlight highlight-orange">
+                                La función implícita es una herramienta fundamental en el cálculo diferencial que nos permite trabajar con funciones que no están expresadas explícitamente en términos de sus variables independientes. Las funciones implícitas se expresan mediante una ecuación que las relaciona con otras variables, y en estas ecuaciones, la variable dependiente no se puede expresar de forma explícita. En otras palabras, las funciones implícitas son aquellas en las que la variable dependiente no se encuentra aislada y no se puede despejar fácilmente.
+                                <br><br>
+                                Una función implícita también se conoce como un conjunto de nivel de cualquier función en términos de dos variables. Fuera de esas dos variables, una de ellas se puede determinar con la ayuda de otra variable. Pero no existe ninguna fórmula específica para determinar una variable en términos de otra variable.
+                                <br><br>
+                                Las funciones implícitas y las funciones explícitas están relacionadas entre sí con la ayuda del teorema de la función implícita. Según este teorema, si la función implícita satisface algunas de las condiciones, aunque levemente, sobre sus derivadas parciales entonces es posible resolver esta función para determinar el valor de y, al menos para un rango pequeño.
+                                Si nos fijamos en la gráfica de una función implícita, nos encontraríamos con que su gráfica se superpone con la gráfica de la función f(x) = y, localmente.
+                                Para tener una mejor comprensión, veamos el ejemplo dado a continuación:
+                                <br><br>
+                            </span></p>
+                                <img src="images/func1.jpg" alt="">
+                            <p><span class="text-highlight highlight-orange">
+                                Aquí x es una función implícita en términos de y, también y es una función implícita en términos de x. Para resolver la ecuación para la variable y, la ecuación se convertiría:
+                            </span></p>
+                            <img src="images/func2.jpg" alt="">
+                            <p><span class="text-highlight highlight-orange">
+                                En la ecuación anterior, y es la función explícita de x. En el penúltimo ejemplo era fácil resolver la ecuación para y en términos de x, pero hay ocasiones en que la función dada es mucho más compleja y no se puede resolver fácilmente.
+                                <br><br>
+                                Una manera más simple y conveniente para resolver tal función es utilizar el método de diferenciación. Primeramente, diferencie la función dada que producirá la derivada dy/dx ó dx/dy, dependiendo de la variable que se considere implícita. Ahora resuelva para esta derivada.
+                                <br><br>
+                                Existen muchos más métodos para solucionar la función implícita, algunos de los cuales son iterativos. Aunque los métodos iterativos producen mejores resultados que los no iterativos en sus aproximaciones sucesivas, se utilizan en raras ocasiones debido a la complejidad que implica el uso de dichos métodos.
+                                <br><br>
+                                Al contrastar el número de ecuaciones (m) en el sistema con el número de variables (n), se puede adquirir información básica acerca de ese conjunto de nivel.
+                                <br><br>
+                                • Si n> m entonces existen infinitas soluciones del sistema de ecuaciones. Dicho sistema también se denomina indeterminado.
+                                <br><br>
+                                • Si n = m, entonces tenemos una única solución a nivel local para el sistema de ecuaciones y la ecuación se puede determinar con exactitud. Esto significa que si tenemos x como la solución de la ecuación entonces no existe ninguna otra solución para la ecuación cerca de x.
+                            </span></p>
+                            <br><br>
+                        </div>
+                    </div>
+
+                    <div class="portafolio-item-full-width">
+                        <a href="https://youtu.be/uXbkX9ou3TM">
+                            <img class="responsive-image" src="images/image2.png" alt="img">
+                        </a>
+                        <h4>Para tomar en cuenta:</h4>
+                        <p>Para trabajar con funciones implícitas, es importante tener un buen conocimiento de la regla de la cadena y la derivación implícita, así como tener una buena comprensión de las funciones trigonométricas y exponenciales. Además, es esencial tener habilidades de álgebra para manipular ecuaciones y resolver sistemas de ecuaciones. Finalmente, es importante recordar que la derivación implícita es solo una herramienta para encontrar la tasa de cambio de la variable dependiente, y que es necesario utilizar otras técnicas para encontrar el valor real de la variable dependiente en un punto específico.</p>
+                    </div>
+
+                    <div class="wide-item">
+                        <div class="wide-item-titles">
+                            <h4>Video</h4>
+                            <p>Descripcion del video</p>
+                        </div>
+
+                        <div class="wide-image">
+                            <div class="overlay"></div>
+                            <a class="tile-wide" href="#">
+                                <img class="responsive-image" src="images/image2.png" alt="img">
+                            </a>
+                    </div>
+
+                    <div class="wide-active">
+                        <div class="content">
+                            <div class="container no-bottom">
+                                <div class="portafolio-item-full-width">
+                                    <h4>Objetivo</h4>
+                                    <p>
+                                        El video sobre funciones implícitas es una explicación visual y detallada de cómo trabajar con este tipo de funciones. Las funciones implícitas son aquellas en las que la variable independiente no aparece explícitamente en la ecuación de la función, sino que está implicada en ella.
+                                    </p>
+                                    <iframe class="responsive-video" src="images/image2.png" width="500" height="500"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="content">
+                    <div class="decoration"></div>
+                    <div class="container">
+                        <div class="fotter-socials">
+                            <a href="#" class="facebook-footer"></a>
+                            <a href="#" class="goup-footer"></a>
+                            <a href="#" class="twitter-footer"></a>
+                        </div>
+                        <p class="copyright uppercase center-text no-bottom">
+                            Copyright 2023 <br> HCI </p>
+                        </div>
+                </div>
+            </div>
+        </section>
+        
+
+    </body>
+</html>
