@@ -70,45 +70,71 @@
         
         <section id="col-right">
             <div class="Content-section">
-                <h1 class="left-text">2.1 Definición de variable, función, dominio y rango.</h1>
-                <em class="left-text">Objetivo: El objetivo del tema es comprender los conceptos fundamentales de las matemáticas que se utilizan para describir relaciones entre cantidades. Al finalizar este tema, el estudiante podrá definir qué es una variable, una función, un dominio y un rango, y cómo estos conceptos están interrelacionados. Asimismo, el estudiante podrá aplicar estos conceptos para resolver problemas matemáticos básicos y para interpretar información presentada en diferentes formatos, incluyendo gráficas, tablas y ecuaciones. </em>
+                <h1 class="left-text">2.6 Funciones escalonadas.</h1>
                 <div class="overlay"></div>
+                <p>
+                    La función escalonada y = s(x) es una función definida a trozos o por partes, tal que 
+                    en un intervalo finito [a,b] tiene un número finito de discontinuidades, a las cuales 
+                    llamaremos x0 < x1 < x2 <…. xn.  En cada intervalo abierto (xi , xi+1), y tiene un 
+                    valor constante de valor si, con discontinuidades -saltos- en los puntos xi.
+                </p>
             </div>
         
             <div class="content">
                 <div class="container no-bottom">
-                    <h3>Informacion general</h3>
-                    <p>El tema 2.1 es uno de los temas fundamentales en matemáticas que se estudia en diferentes niveles educativos. Estos conceptos son esenciales para comprender cómo las matemáticas se aplican a diferentes campos, como la física, la ingeniería, la economía y las ciencias sociales.
+                    <h3>Características</h3>
+                    <p>Una función escalonada es aquella función definida a trozos y tiene la forma de una 
+                        escalera que pueden ascender o descender al ser dibujadas. El ejemplo más común de 
+                        función escalonada es la función parte entera, función escalón de Heaviside o 
+                        función escalón unitario, y la función signo.
                         <br> <br>
-                        Las variables se utilizan en matemáticas para representar cantidades desconocidas o que pueden cambiar. Las variables pueden representar números, valores de medidas, ángulos, coeficientes y otras cantidades. En una ecuación, las variables se utilizan para encontrar el valor de la cantidad desconocida. Por ejemplo, en la ecuación "2x + 3 = 7", "x" es la variable y representa un valor desconocido que se puede encontrar mediante la resolución de la ecuación.
-                        <br>
-                        Una función es una relación matemática entre un conjunto de entradas (dominio) y un conjunto de salidas (rango). Las funciones se utilizan para describir las relaciones entre dos o más variables. En matemáticas, una función se puede representar mediante una fórmula o una tabla de valores. Por ejemplo, la función "f(x) = 2x + 1" representa una relación matemática entre "x" y "f(x)", donde cada valor de "x" tiene un único valor correspondiente de "f(x)".</p>
+                        La composición de cualquier función escalonada s(x) y una función cualquiera f(x) 
+                        da por resultado una función escalonada g(x) = f(s(x)), siempre que f(x) esté 
+                        definida para cualquier valor de x en el rango de s(x).                        
+                    </p>
                     
                     <div class="container no-bottom">
-                        <h3>Definicion del tema</h3>
+                        <h3>Ejemplos de funciones escalonadas</h3>
                         <div class="decoration hide-if-mobile"></div>
                         <div class="one-half-responsive last column" style="width: 100%;">
-                            <p><span class="text-highlight highlight-orange">El tema 2.1 "Definición de variable, función, dominio y rango" se enfoca en los conceptos fundamentales de las matemáticas que son necesarios para entender y resolver problemas matemáticos. Una <strong>variable</strong> es un símbolo que representa una cantidad desconocida o una cantidad que puede cambiar en una función o ecuación matemática. Las variables pueden representar números, valores de medidas, ángulos, coeficientes y otras cantidades.
+                            <p><span class="text-highlight highlight-orange">Dentro de las funciones escalonadas hay 
+                                varios tipos, por ejemplo las funciones de parte entera y la función escalón unitario, 
+                                así como diversas funciones escalonadas que describen situaciones comunes, como las 
+                                tarifas de muchos servicios. Veamos algunos ejemplos:
                                 <br><br>
-                                Una <strong>función</strong> es una relación matemática entre un conjunto de entradas (dominio) y un conjunto de salidas (rango), en la que cada elemento del conjunto de entradas se corresponde con un único elemento del conjunto de salidas. Las funciones se utilizan para describir las relaciones entre dos o más variables. Las funciones pueden ser representadas gráficamente, mediante una fórmula o una tabla de valores.
+                                <strong>– Ejemplo 1: la función parte entera</strong>
+                                <br>
+                                La función parte entera se denota frecuentemente usando doble corchete:
+                                <br>
+                                f (x) =[[x]]
+                                <br>
+                                Y se define como una función que asigna a cada número real el entero 
+                                mayor o menor más próximo, ignorando cualquier decimal que tenga el número. 
+                                Según sea el caso, tenemos:
+                                <br><strong>Función techo o cielo</strong><br>
+                                Asigna a cada valor del dominio el número entero más próximo por exceso. Por ejemplo:
+                                <br>
+                                [[+2.56]] = 3
+                                <br>
+                                Se ignora la parte decimal que es 0.56 y se asigna el número entero más próximo que 
+                                sea mayor a 2.
+                                <br>
+                                Otro ejemplo:
+                                <br>
+                                [[–4.2]]= –3
+                                <br>
+                                De nuevo se omite la parte decimal 0.2 y se toma como valor de la función el 
+                                entero mayor más próximo a -4, el cual es -3.
+                                <br>
+                                En la siguiente figura está la gráfica de la función techo, nótese que el escalón 
+                                está delimitado por un pequeño círculo hueco a la izquierda y uno lleno a la derecha, 
+                                ya que a cualquier número del intervalo, se le asigna al entero mayor entre los 
+                                extremos del intervalo.
+
                             </span>
                             </p>
-                                <center><img style="width: 300px;" src="images/funcion.png" alt="img"></center>
-                                <br><br>
-                                <p><span class="text-highlight highlight-orange">
-                                El <strong>dominio</strong> de una función es el conjunto de valores que se pueden ingresar en la función como entrada o argumento. El dominio es importante porque define los límites y las restricciones de una función. Por ejemplo, en la función "f(x) = 1/x", el dominio no incluye el valor "0" ya que no se puede dividir entre cero. En este caso, el dominio sería "x ≠ 0".
-                            </span>
-                            </p>
-                                <center><img src="images/dominio.png" alt=""></center>
-                                <br><br>
-                                <p><span class="text-highlight highlight-orange">
-                                El <strong>rango</strong> de una función es el conjunto de valores que se obtienen como salida o resultado de la función para cada elemento del dominio. El dominio y el rango son importantes porque definen los límites y las restricciones de una función. Por ejemplo, una función puede estar restringida a valores positivos o a un rango específico de valores.
-                                <br><br>
-                                Es importante tener en cuenta que los conceptos de variable, función, dominio y rango se utilizan en una amplia variedad de áreas de las matemáticas, así como en otras áreas de la ciencia y la ingeniería. Estos conceptos son fundamentales para comprender y resolver problemas matemáticos, así como para modelar fenómenos en el mundo real.
-                                <br><br>
-                                Para trabajar con estos conceptos, se utilizan diferentes herramientas matemáticas, como ecuaciones, gráficas, tablas de valores y cálculo diferencial e integral. El cálculo diferencial e integral es una herramienta matemática avanzada que se utiliza para resolver problemas relacionados con el cambio y la acumulación de cantidades, como velocidad, aceleración, área y volumen. El cálculo también se utiliza para encontrar máximos y mínimos de funciones, así como para encontrar soluciones a ecuaciones diferenciales.</span>
-                            <br><br>
-                        </p>
+                                <center><img style="width: 300px;" src="images/funcion-escalonada-01.jpg" alt="img"></center>
+                                
                         </div>
                     </div>
 
